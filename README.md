@@ -4,7 +4,17 @@ All related to MaLLaM 🌙 Malaysia Large Language Models, cookbooks 📖 , bugs
 
 MaLLaM 🌙 is Multi-lingual Malaysian Chat Language Model, 32k context length, Malaysian centric and private, in the future we will support longer context length and code interpreter, get your API key at https://app.nous.mesolitica.com/
 
-MaLLaM 🌙 is compatible with OpenAI library, or if you prefer CURL command, read the API documentation at https://llm-router.nous.mesolitica.com/scalar
+MaLLaM 🌙 is compatible with OpenAI library, or if you prefer CURL command, read the API documentation at https://llm-router.nous.mesolitica.com/scalar,
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://llm-router.nous.mesolitica.com",
+)
+```
+
+**Currently we only support Chat Completion**.
 
 ## Evaluation
 
