@@ -20,6 +20,10 @@ or if you prefer CURL command, read the API documentation at https://llm-router.
 
 **Currently we only support Chat Completion**.
 
+## [Cookbook](cookbook)
+
+We covered RAG, JSON prompts and so much more.
+
 ## Evaluation
 
 1. [json-mode-eval](evaluation/json-mode-eval),
