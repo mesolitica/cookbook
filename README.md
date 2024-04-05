@@ -1,10 +1,12 @@
-# MaLLaM 🌙
+# Nous
 
-All related to MaLLaM 🌙 Malaysia Large Language Models, cookbooks 📖 , bugs 🐛 and feature requests 🙇🏽. This repository only applicable for commercial models from https://mesolitica.com/mallam, not open models https://mesolitica.com/openmodel
+All related to Nous, MaLLaM 🌙, Speech, Translation, cookbooks 📖 , bugs 🐛 and feature requests 🙇🏽. This repository only applicable for commercial models from https://mesolitica.com, not open models from https://mesolitica.com/opensource
+
+## MaLLaM 🌙
 
 MaLLaM 🌙 is Multi-lingual Malaysian Chat Language Model, 32k context length, Malaysian centric and private, in the future we will support longer context length and code interpreter, get your API key at https://app.nous.mesolitica.com/
 
-## OpenAI compatible
+### OpenAI compatible
 
 MaLLaM 🌙 is compatible with OpenAI library,
 
@@ -20,11 +22,11 @@ or if you prefer CURL command, read the API documentation at https://llm-router.
 
 **Currently we only support Chat Completion**.
 
-## [Cookbook](cookbook)
+### [Cookbook](cookbook)
 
 We covered RAG, JSON prompts and so much more.
 
-## Evaluation
+### Evaluation
 
 1. [json-mode-eval](evaluation/json-mode-eval),
 
@@ -32,13 +34,13 @@ Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, thi
 
 ## Self-hosted Enterprise
 
-If you are interested to self-host MaLLaM 🌙 in your virtual private network, Contact us at khalil@mesolitica.com or husein@mesolitica.com to know more.
+If you are interested to self-host Nous in your virtual private network, Contact us at khalil@mesolitica.com or husein@mesolitica.com to know more.
 
 ### What do you get
 
-1. ♾️ usage of MaLLaM 🌙 and chatbots.
-2. Up-to-date enterprise versioning including evolution of MaLLaM 🌙 and chatbots.
-3. Can be either on private cloud or on premise, Dashboard and MaLLaM 🌙 API will be hosted using virtual private IP.
+1. ♾️ usage of all quota, MaLLaM 🌙, Speech, Translation and chatbots.
+2. Up-to-date enterprise versioning including evolution of MaLLaM 🌙, Speech, Translation and chatbots.
+3. Can be either on private cloud or on premise, Dashboard and all the APIs will be hosted using virtual private IP.
 
 ### Hardware
 
