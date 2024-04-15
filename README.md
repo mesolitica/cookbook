@@ -6,6 +6,10 @@ All related to Nous, MaLLaM 🌙, Speech, Translation, cookbooks 📖 , bugs �
 
 MaLLaM 🌙 is Multi-lingual Malaysian Chat Language Model, 32k context length, Malaysian centric and private, in the future we will support longer context length and code interpreter, get your API key at https://app.nous.mesolitica.com/
 
+API documentation at https://llm-router.nous.mesolitica.com/scalar#tag/default/post/chat/completions
+
+**Currently we only support Chat Completion**.
+
 ### OpenAI compatible
 
 MaLLaM 🌙 is compatible with OpenAI library for Python and Node JS.
@@ -69,9 +73,44 @@ main();
 }
 ```
 
-or if you prefer CURL command, read the API documentation at https://llm-router.nous.mesolitica.com/scalar
+### cURL
 
-**Currently we only support Chat Completion**.
+```curl
+curl -X 'POST' \
+'https://llm-router.nous.mesolitica.com/chat/completions' \
+-H 'accept: application/json' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer api_key' \
+-d '{
+"model": "mallam-small",
+"temperature": 0.9,
+"top_p": 0.95,
+"top_k": 50,
+"max_tokens": 1024,
+"messages": [
+    {
+        "role": "system",
+        "content": "Awak pembantu AI yang berguna."
+    },
+    {
+        "role": "user",
+        "content": "Hello!"
+    }
+],
+"tools": [],
+"stream": false
+}'
+```
+
+```
+{"id":"cmpl-2def863689fa4502bc7d554a687d1f8c","object":"chat.completion","created":1570278,"model":"mallam-small","choices":[{"index":0,"message":{"role":"assistant","content":"helo! Bagaimana saya boleh membantu anda hari ini?"},"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":25,"total_tokens":48,"completion_tokens":23}}
+```
+
+## Speech
+
+Speech is End-to-End streamable Malaysian Speech-to-Text and Speech Translation with Speaker Diarization, get your API key at https://app.nous.mesolitica.com/
+
+API documentation at https://llm-router.nous.mesolitica.com/scalar#tag/default/post/audio/transcriptions
 
 ### [Cookbook](cookbook)
 
