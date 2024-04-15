@@ -69,8 +69,6 @@ main();
 }
 ```
 
-```
-
 or if you prefer CURL command, read the API documentation at https://llm-router.nous.mesolitica.com/scalar
 
 **Currently we only support Chat Completion**.
