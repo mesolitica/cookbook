@@ -106,12 +106,6 @@ curl -X 'POST' \
 {"id":"cmpl-2def863689fa4502bc7d554a687d1f8c","object":"chat.completion","created":1570278,"model":"mallam-small","choices":[{"index":0,"message":{"role":"assistant","content":"helo! Bagaimana saya boleh membantu anda hari ini?"},"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":25,"total_tokens":48,"completion_tokens":23}}
 ```
 
-## Speech
-
-Speech is End-to-End streamable Malaysian Speech-to-Text and Speech Translation with Speaker Diarization, get your API key at https://app.nous.mesolitica.com/
-
-API documentation at https://llm-router.nous.mesolitica.com/scalar#tag/default/post/audio/transcriptions
-
 ### [Cookbook](cookbook)
 
 We covered RAG, JSON prompts and so much more.
@@ -121,6 +115,12 @@ We covered RAG, JSON prompts and so much more.
 1. [json-mode-eval](evaluation/json-mode-eval),
 
 Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, this test is to test how good the models able to convert human natural text into JSON output given the OpenAPI schema.
+
+## Speech
+
+Speech is End-to-End streamable Malaysian Speech-to-Text and Speech Translation with Speaker Diarization, get your API key at https://app.nous.mesolitica.com/
+
+API documentation at https://llm-router.nous.mesolitica.com/scalar#tag/default/post/audio/transcriptions
 
 ## Self-hosted Enterprise
 
