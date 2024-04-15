@@ -6,7 +6,9 @@ MaLLaM 🌙 is Multi-lingual Malaysian Chat Language Model, 32k context length, 
 
 ## OpenAI compatible
 
-MaLLaM 🌙 is compatible with OpenAI library,
+MaLLaM 🌙 is compatible with OpenAI library for Python and Node JS.
+
+### Python
 
 ```python
 from openai import OpenAI
@@ -14,6 +16,57 @@ from openai import OpenAI
 client = OpenAI(
     base_url="https://llm-router.nous.mesolitica.com",
 )
+
+completion = client.chat.completions.create(
+  model="mallam-small",
+  messages=[
+    { "role": "system", "content": "You are a helpful assistant." },
+    { "role": "user", "content": "Hello!" }
+  ]
+)
+print(completion.choices[0].message)
+```
+
+```
+ChatCompletionMessage(content='hello! Bagaimanakah saya boleh membantu anda hari ini?', role='assistant', function_call=None, tool_calls=None)
+```
+
+### Node JS
+
+```js
+const OpenAI = require('openai');
+
+const openai = new OpenAI({
+    baseURL: 'https://llm-router.nous.mesolitica.com',
+});
+
+async function main() {
+    const completion = await openai.chat.completions.create({
+        model: "mallam-small",
+        messages: [
+            { "role": "system", "content": "Awak pembantu AI yang berguna." },
+            { "role": "user", "content": "Hello!" }
+        ],
+    });
+
+    console.log(completion.choices[0]);
+}
+
+main();
+```
+
+```
+{
+  index: 0,
+  message: {
+    role: 'assistant',
+    content: 'hello! Saya di sini untuk memberikan maklumat dan menjawab sebarang soalan yang anda ada.'
+  },
+  logprobs: null,
+  finish_reason: 'stop'
+}
+```
+
 ```
 
 or if you prefer CURL command, read the API documentation at https://llm-router.nous.mesolitica.com/scalar
