@@ -1,6 +1,6 @@
 # Nous
 
-All related to Nous, MaLLaM 🌙, Speech, Translation, cookbooks 📖 , bugs 🐛 and feature requests 🙇🏽. This repository only applicable for commercial models from https://mesolitica.com, not open models from https://mesolitica.com/opensource
+All related to Nous, MaLLaM 🌙, Retrieval, Classifier, Speech, Translation, cookbooks 📖 , bugs 🐛 and feature requests 🙇🏽. This repository only applicable for commercial models from https://mesolitica.com, not open models from https://mesolitica.com/opensource
 
 ## MaLLaM 🌙
 
