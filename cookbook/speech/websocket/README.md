@@ -25,5 +25,6 @@ https://github.com/user-attachments/assets/2f10d2c9-90b8-4561-97e5-872469732ba1
 uvicorn recordrtc-fastapi:app --reload --host 0.0.0.0 --port 8000
 ```
 
-2. Access http://localhost:8000
+2. Access http://localhost:8000,
 
+https://github.com/user-attachments/assets/ac46fede-f6fe-43de-8333-f0b0f8f04bd3
