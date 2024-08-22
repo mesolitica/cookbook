@@ -40,12 +40,12 @@ Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, thi
 
 1. [Python OpenAI compatible](cookbook/speech/python-openai.ipynb)
 2. [Streaming using AIOHTTP](cookbook/speech/streaming-python.ipynb)
-3. [Streaming using AIOHTTP with VAD](cookbook/speech/streaming-python-vad.ipynb).
+3. [Streaming using AIOHTTP with VAD](cookbook/speech/streaming-python-vad.ipynb)
 
 ### [Streaming using Websocket](cookbook/speech/websocket)
 
-1. [Microphone PyAudio -> Websocket Python](cookbook/speech/websocket/pyaudio-websocket.ipynb).
-2. [RecordRTC -> Websocket FastAPI]().
+1. [Microphone PyAudio -> Websocket Python](cookbook/speech/websocket/pyaudio-websocket.ipynb)
+2. [RecordRTC -> Websocket FastAPI]()
 
 ## [Translation](cookbook/translation)
 
