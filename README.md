@@ -50,6 +50,8 @@ https://github.com/user-attachments/assets/067859ca-5c05-4704-9f22-33c28f0b57b5
 
 2. [RecordRTC JS -> Websocket FastAPI](cookbook/speech/websocket/recordrtc-fastapi.py)
 
+https://github.com/user-attachments/assets/6dba8a94-1953-4a52-9844-9955ca1e29ac
+
 ## [Translation](cookbook/translation)
 
 1. [Python Requests]()
