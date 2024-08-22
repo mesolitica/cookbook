@@ -26,17 +26,17 @@ All API support concurrency requests, it means,
 5. [Function call](cookbook/mallam/function-call.ipynb)
 6. [System prompt](cookbook/mallam/system-prompt.ipynb)
 
-### Evaluation
+### [Evaluation](cookbook/mallam/evaluation)
 
 1. [json-mode-eval](evaluation/json-mode-eval),
 
 Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, this test is to test how good the models able to convert human natural text into JSON output given the OpenAPI schema.
 
-## Retrieval
+## [Retrieval](cookbook/retrieval)
 
 1. [Python OpenAI compatible]()
 
-## Speech
+## [Speech](cookbook/speech)
 
 1. [Python OpenAI compatible](cookbook/speech/python-openai.ipynb)
 2. [Streaming using AIOHTTP](cookbook/speech/streaming-python.ipynb)
@@ -47,7 +47,7 @@ Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, thi
 1. [Microphone PyAudio -> Websocket Python](cookbook/speech/websocket/pyaudio-websocket.ipynb).
 2. [RecordRTC -> Websocket FastAPI]().
 
-## Translation
+## [Translation](cookbook/translation)
 
 1. [Python Requests]()
 
