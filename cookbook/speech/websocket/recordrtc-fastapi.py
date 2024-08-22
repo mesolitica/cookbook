@@ -1,4 +1,4 @@
-apikey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2Vpbi56b2wwNUBnbWFpbC5jb20iLCJ1dWlkIjoiMWQ1OWI1NzAtNTgwOS00NmFmLThmYjAtMzhiYWQzYjUyMGVjIn0.ctSLjeCfh-XwHtyOqya05xTpWZxW94vPanwlx7WLf9I'
+apikey = ''
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse
