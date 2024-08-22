@@ -10,3 +10,20 @@ For Mesolitica Websocket Speech API, because the API support streaming token, so
 
 https://github.com/user-attachments/assets/2f10d2c9-90b8-4561-97e5-872469732ba1
 
+## RecordRTC JS -> Websocket FastAPI
+
+[recordrtc-fastapi.py](recordrtc-fastapi.py).
+
+1. Basically, Frontend RecordRTC JS -> (Websocket) Local Backend -> (Websocket) Websocket Speech API.
+2. The reason why you cannot call directly from Frontend is to prevent API key leakage to the users.
+
+## how to run
+
+1. Run FastAPI,
+
+```bash
+uvicorn recordrtc-fastapi:app --reload --host 0.0.0.0 --port 8000
+```
+
+2. Access http://localhost:8000
+

@@ -48,7 +48,7 @@ Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, thi
 
 https://github.com/user-attachments/assets/067859ca-5c05-4704-9f22-33c28f0b57b5
 
-2. [RecordRTC -> Websocket FastAPI]()
+2. [RecordRTC JS -> Websocket FastAPI](cookbook/speech/websocket/recordrtc-fastapi.py)
 
 ## [Translation](cookbook/translation)
 
