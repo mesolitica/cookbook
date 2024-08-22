@@ -45,6 +45,9 @@ Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, thi
 ### [Streaming using Websocket](cookbook/speech/websocket)
 
 1. [Microphone PyAudio -> Websocket Python](cookbook/speech/websocket/pyaudio-websocket.ipynb)
+
+https://github.com/user-attachments/assets/067859ca-5c05-4704-9f22-33c28f0b57b5
+
 2. [RecordRTC -> Websocket FastAPI]()
 
 ## [Translation](cookbook/translation)
