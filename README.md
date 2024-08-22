@@ -1,114 +1,30 @@
-# Nous
+# Cookbook
 
-All related to Nous, MaLLaM 🌙, Speech, Translation, cookbooks 📖 , bugs 🐛 and feature requests 🙇🏽. This repository only applicable for commercial models from https://mesolitica.com, not open models from https://mesolitica.com/opensource
+cookbooks 📖 for Mesolitica products! This repository only applicable for commercial models from https://mesolitica.com, not open models from https://mesolitica.com/opensource
 
-## MaLLaM 🌙
+## API key
 
-MaLLaM 🌙 is Multi-lingual Malaysian Chat Language Model, 32k context length, Malaysian centric and private, in the future we will support longer context length and code interpreter, get your API key at https://app.nous.mesolitica.com/
+Get your API key at https://app.nous.mesolitica.com/
 
-API documentation at https://llm-router.nous.mesolitica.com/scalar#tag/default/post/chat/completions
+## Documentation
 
-**Currently we only support Chat Completion**.
+We hosted scalar documentation at https://llm-router.nous.mesolitica.com/scalar
 
-### OpenAI compatible
+## Concurrency
 
-MaLLaM 🌙 is compatible with OpenAI library for Python and Node JS.
+All API support concurrency requests, it means,
 
-### Python
+1. If you have a batch of texts, you can fire multiple requests at the same without impacting the latency, same goes to Speech API.
+2. For Websocket Speech API, you can connect multiple users from your side to do real-time audio streaming to the Websocket server.
 
-```python
-from openai import OpenAI
+## [MaLLaM 🌙](cookbook/mallam)
 
-client = OpenAI(
-    base_url="https://llm-router.nous.mesolitica.com",
-)
-
-completion = client.chat.completions.create(
-  model="mallam-small",
-  messages=[
-    { "role": "system", "content": "You are a helpful assistant." },
-    { "role": "user", "content": "Hello!" }
-  ]
-)
-print(completion.choices[0].message)
-```
-
-```
-ChatCompletionMessage(content='hello! Bagaimanakah saya boleh membantu anda hari ini?', role='assistant', function_call=None, tool_calls=None)
-```
-
-### Node JS
-
-```js
-const OpenAI = require('openai');
-
-const openai = new OpenAI({
-    baseURL: 'https://llm-router.nous.mesolitica.com',
-});
-
-async function main() {
-    const completion = await openai.chat.completions.create({
-        model: "mallam-small",
-        messages: [
-            { "role": "system", "content": "Awak pembantu AI yang berguna." },
-            { "role": "user", "content": "Hello!" }
-        ],
-    });
-
-    console.log(completion.choices[0]);
-}
-
-main();
-```
-
-```
-{
-  index: 0,
-  message: {
-    role: 'assistant',
-    content: 'hello! Saya di sini untuk memberikan maklumat dan menjawab sebarang soalan yang anda ada.'
-  },
-  logprobs: null,
-  finish_reason: 'stop'
-}
-```
-
-### cURL
-
-```curl
-curl -X 'POST' \
-'https://llm-router.nous.mesolitica.com/chat/completions' \
--H 'accept: application/json' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer api_key' \
--d '{
-"model": "mallam-small",
-"temperature": 0.9,
-"top_p": 0.95,
-"top_k": 50,
-"max_tokens": 1024,
-"messages": [
-    {
-        "role": "system",
-        "content": "Awak pembantu AI yang berguna."
-    },
-    {
-        "role": "user",
-        "content": "Hello!"
-    }
-],
-"tools": [],
-"stream": false
-}'
-```
-
-```
-{"id":"cmpl-2def863689fa4502bc7d554a687d1f8c","object":"chat.completion","created":1570278,"model":"mallam-small","choices":[{"index":0,"message":{"role":"assistant","content":"helo! Bagaimana saya boleh membantu anda hari ini?"},"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":25,"total_tokens":48,"completion_tokens":23}}
-```
-
-### [Cookbook](cookbook)
-
-We covered RAG, JSON prompts and so much more.
+1. [Python OpenAI compatible]()
+2. [Streaming Python OpenAI compatible]()
+3. [RAG](cookbook/mallam/RAG.ipynb)
+4. [JSON format](cookbook/mallam/JSON-format.ipynb)
+5. [Function call](cookbook/mallam/function-call.ipynb)
+6. [System prompt](cookbook/mallam/system-prompt.ipynb)
 
 ### Evaluation
 
@@ -116,15 +32,28 @@ We covered RAG, JSON prompts and so much more.
 
 Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, this test is to test how good the models able to convert human natural text into JSON output given the OpenAPI schema.
 
+## Retrieval
+
+1. [Python OpenAI compatible]()
+
 ## Speech
 
-Speech is End-to-End streamable Malaysian Speech-to-Text and Speech Translation with Speaker Diarization, get your API key at https://app.nous.mesolitica.com/
+1. [Python OpenAI compatible](cookbook/speech/python-openai.ipynb)
+2. [Streaming using AIOHTTP](cookbook/speech/streaming-python.ipynb)
+3. [Streaming using AIOHTTP with VAD](cookbook/speech/streaming-python-vad.ipynb).
 
-API documentation at https://llm-router.nous.mesolitica.com/scalar#tag/default/post/audio/transcriptions
+### [Streaming using Websocket](cookbook/speech/websocket)
+
+1. [Microphone PyAudio -> Websocket Python](cookbook/speech/websocket/pyaudio-websocket.ipynb).
+2. [RecordRTC -> Websocket FastAPI]().
+
+## Translation
+
+1. [Python Requests]()
 
 ## Self-hosted Enterprise
 
-If you are interested to self-host Nous in your virtual private network, Contact us at khalil@mesolitica.com or husein@mesolitica.com to know more.
+If you are interested to self-host Mesolitica products in your virtual private network, Contact us at khalil@mesolitica.com or husein@mesolitica.com to know more.
 
 ### What do you get
 
@@ -139,4 +68,4 @@ If you are interested to self-host Nous in your virtual private network, Contact
 
 ### Software
 
-We provide quarterly and yearly licensing, and yearly licencing is much more cheaper in the long term, include support.
+We only yearly licensing with starting specific amount.
