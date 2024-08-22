@@ -73,4 +73,4 @@ If you are interested to self-host Mesolitica products in your virtual private n
 
 ### Software
 
-We only yearly licensing with starting specific amount.
+We only provide yearly licensing with starting specific amount.
