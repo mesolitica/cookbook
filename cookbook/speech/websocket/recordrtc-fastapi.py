@@ -53,7 +53,7 @@ html = """
 
     async function asyncSend(blob) {
       arr = await blob.arrayBuffer();
-      base64String = btoa(String.fromCharCode.apply(null, new Uint8Array(arr)));
+      base64String = btoa(String.fromCharCode.apply(null, new Uint8Array(arr).slice(300)));
       ws.send(base64String);
     }
 
@@ -78,6 +78,7 @@ html = """
           recorderType: StereoAudioRecorder,
           numberOfAudioChannels: 1,
           timeSlice: 100,
+          bufferSize: 16384,
           ondataavailable: function (blob) {
             asyncSend(blob);
             global_blob = blob;
