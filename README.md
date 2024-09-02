@@ -52,6 +52,10 @@ https://github.com/user-attachments/assets/067859ca-5c05-4704-9f22-33c28f0b57b5
 
 https://github.com/user-attachments/assets/6dba8a94-1953-4a52-9844-9955ca1e29ac
 
+3. [RecordRTC JS -> Websocket ExpressJS](cookbook/speech/websocket/recordrtc.js)
+
+https://github.com/user-attachments/assets/913f2b4b-4464-442e-8fd5-a7c391b4160b
+
 ## [Translation](cookbook/translation)
 
 1. [Python Requests]()
