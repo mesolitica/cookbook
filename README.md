@@ -42,6 +42,8 @@ Originally from https://huggingface.co/datasets/NousResearch/json-mode-eval, thi
 2. [Streaming using AIOHTTP](cookbook/speech/streaming-python.ipynb)
 3. [Streaming using AIOHTTP with VAD](cookbook/speech/streaming-python-vad.ipynb)
 
+For streaming, make sure read our [streaming documentation](cookbook/speech/streaming.md).
+
 ### [Streaming using Websocket](cookbook/speech/websocket)
 
 1. [Microphone PyAudio -> Websocket Python](cookbook/speech/websocket/pyaudio-websocket.ipynb)
