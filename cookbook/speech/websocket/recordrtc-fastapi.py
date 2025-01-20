@@ -11,9 +11,9 @@ import urllib.parse
 
 app = FastAPI()
 
-base_url = "wss://llm-router.nous.mesolitica.com/audio/transcriptions/ws"
+base_url = "wss://api.mesolitica.com/audio/transcriptions/ws"
 
-# check parameter at https://llm-router.nous.mesolitica.com/scalar#tag/audio-transcription/POST/audio/transcriptions
+# check parameter at https://api.mesolitica.com/scalar#tag/audio-transcription/POST/audio/transcriptions
 params = {
     "apikey": apikey,
     "language": "en"

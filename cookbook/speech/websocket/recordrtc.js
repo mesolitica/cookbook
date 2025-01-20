@@ -8,9 +8,9 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ noServer: true });
 
 const apikey = '';
-const base_url = "wss://llm-router.nous.mesolitica.com/audio/transcriptions/ws";
+const base_url = "wss://api.mesolitica.com/audio/transcriptions/ws";
 
-// Check parameter at https://llm-router.nous.mesolitica.com/scalar#tag/audio-transcription/POST/audio/transcriptions
+// Check parameter at https://api.mesolitica.com/scalar#tag/audio-transcription/POST/audio/transcriptions
 const params = new URLSearchParams({
     "apikey": apikey,
     "language": "en"
